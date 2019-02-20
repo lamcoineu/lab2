@@ -1,5 +1,3 @@
-import jdk.internal.org.objectweb.asm.util.Printer;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,7 +13,6 @@ public class ResultServlet extends HttpServlet {
     protected void doGet (HttpServletRequest req , HttpServletResponse resp) throws ServletException, IOException{
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter writer = resp.getWriter();
-//        int result = Integer.parseInt(req.getParameter("number1"))  + Integer.parseInt(req.getParameter("number2"));
         writer.println("<html>");
         writer.println("<head>");
         writer.println("<title>Cộng</title> ");
